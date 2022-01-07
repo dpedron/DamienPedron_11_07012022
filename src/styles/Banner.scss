@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.logo{
+    width: 210px;
+    height: 68px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 24px;
+    li{
+        margin-left: 60px;
+        :hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

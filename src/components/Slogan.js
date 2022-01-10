@@ -4,7 +4,7 @@ import '../styles/css/Slogan.css';
 class Slogan extends React.Component {
     render() {
         return(
-            <section>
+            <section className="slogan">
                 <h1>Chez vous, partout et ailleurs</h1>
             </section>
         )

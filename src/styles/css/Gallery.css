@@ -1,0 +1,11 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1240px;
+  margin: 0 100px;
+  padding: 31px 20px;
+  background: #F7F7F7;
+  border-radius: 25px;
+}
+/*# sourceMappingURL=Gallery.css.map */

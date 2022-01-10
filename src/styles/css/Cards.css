@@ -1,0 +1,16 @@
+.card {
+  width: 340px;
+  height: 340px;
+  margin: 25px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+}
+
+.card--title {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+/*# sourceMappingURL=Cards.css.map */

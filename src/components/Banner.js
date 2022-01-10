@@ -6,7 +6,7 @@ class Banner extends React.Component {
     render(){
         return (
             <header>
-                <img src={logo} alt="Kasa" className="logo" />
+                <img src={logo} alt="Kasa" className="header--logo" />
                 <nav>
                     <ul>
                         <li><a>Accueil</a></li>

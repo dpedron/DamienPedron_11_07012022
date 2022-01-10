@@ -1,15 +1,16 @@
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0 100px;
+  max-width: 1240px;
+  margin: 40px auto 63px auto;
 }
 
-.logo {
+.header--logo {
   width: 210px;
   height: 68px;
 }
 
-ul {
+nav ul {
   display: flex;
   list-style: none;
   color: #FF6060;
@@ -17,11 +18,11 @@ ul {
   font-size: 24px;
 }
 
-ul li {
+nav ul li {
   margin-left: 60px;
 }
 
-ul li :hover {
+nav ul li :hover {
   text-decoration: underline;
   cursor: pointer;
 }

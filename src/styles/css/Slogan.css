@@ -6,7 +6,8 @@
   height: 223px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/slogan-bg.png");
   max-width: 1240px;
-  margin: 0 auto;
+  width: 87%;
+  margin: 63px 100px 0 100px;
 }
 
 .slogan h1 {

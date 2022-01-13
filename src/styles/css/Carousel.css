@@ -1,0 +1,40 @@
+.carousel {
+  display: flex;
+  height: 415px;
+  margin: 10px 100px 20px 100px;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+}
+
+.carousel--pic {
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel--pos {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.carousel--chevron {
+  position: absolute;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.carousel--chevron__prev {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+.carousel--chevron__next {
+  right: 0;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=Carousel.css.map */

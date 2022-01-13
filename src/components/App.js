@@ -3,15 +3,33 @@ import Banner from './Banner';
 import Slogan from './Slogan';
 import Gallery from './Gallery';
 import Footer from './Footer';
+import Carousel from './Carousel';
+import Info from './Info';
 
 function App() {
   return (
-    <div className="container">
+
+    // HOMEPAGE //
+
+/*     <>
       <Banner />
-      <Slogan />
-      <Gallery />
+      <main>
+        <Slogan />
+        <Gallery />
+      </main>
       <Footer />
-    </div>
+    </> */
+
+    // HOUSING PAGE //
+
+    <>
+    <Banner />
+    <main>
+    <Carousel />
+    <Info />
+    </main>
+    <Footer />
+  </>
   );
 }
 

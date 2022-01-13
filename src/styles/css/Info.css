@@ -1,0 +1,74 @@
+.info {
+  margin: 0 100px;
+  color: #FF6060;
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "title host" "location host" "tags rating";
+}
+
+.info--title {
+  grid-area: title;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0;
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+.info--host {
+  grid-area: host;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: right;
+  text-align: right;
+}
+
+.info--host--name {
+  max-width: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px 0 0;
+}
+
+.info--host--pic {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.info--location {
+  grid-area: location;
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.info--tags {
+  grid-area: tags;
+  display: flex;
+  margin: 0;
+}
+
+.info--tags--tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  width: 115px;
+  height: 25px;
+  background-color: #FF6060;
+  color: white;
+}
+
+.info--rating {
+  grid-area: rating;
+}
+
+.info--rating--star {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=Info.css.map */

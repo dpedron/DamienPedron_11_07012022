@@ -1,11 +1,17 @@
 header {
+  margin: auto;
+  max-width: 1440px;
+}
+
+.banner {
   display: flex;
   justify-content: space-between;
   max-width: 1240px;
-  margin: 40px auto 63px auto;
+  width: 87%;
+  margin: 40px 100px 0 100px;
 }
 
-.header--logo {
+.banner--logo {
   width: 210px;
   height: 68px;
 }

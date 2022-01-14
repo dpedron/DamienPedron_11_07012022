@@ -1,0 +1,22 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF6060;
+    &--type{
+        font-weight: 700;
+        font-size: 288px;
+        margin: 100px 0 50px 0;
+    }
+    &--message{
+        margin: 0;
+        font-weight: 500;
+        font-size: 36px;
+    }
+    &--go-home{
+        margin: 180px 0 50px 0;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+}

@@ -22,6 +22,7 @@
 }
 
 .carousel--chevron {
+  cursor: pointer;
   position: absolute;
   height: 100%;
   background-color: transparent;

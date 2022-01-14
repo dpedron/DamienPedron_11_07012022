@@ -1,10 +1,11 @@
 import '../styles/css/App.css';
 import Header from './Header';
-import Slogan from './Slogan';
+import Banner from './Banner';
 import Gallery from './Gallery';
 import Footer from './Footer';
 import Carousel from './Carousel';
 import Info from './Info';
+import Error from './Error';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
 /*     <>
       <Header />
       <main>
-        <Slogan />
+        <Banner />
         <Gallery />
       </main>
       <Footer />
@@ -22,12 +23,20 @@ function App() {
 
     // HOUSING PAGE //
 
-    <>
+/*     <>
     <Header />
     <main>
     <Carousel />
     <Info />
     </main>
+    <Footer />
+    </> */
+
+    // 404 PAGE //
+
+    <>
+    <Header />
+    <Error />
     <Footer />
     </>
   );

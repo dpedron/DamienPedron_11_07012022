@@ -2,19 +2,21 @@ import logements from '../datas/logements.json';
 import '../styles/css/Info.css';
 import star from '../assets/star.png';
 import starGrey from '../assets/star-grey.png'
+import Dropdown from './Dropdown';
 
-function Info() {
+function Info() {    
 
     const rating = () => {
-        let ratingArray = []  
-        for(let i=0; i<5; i++){
-            if(i<parseInt(logements[0].rating)){
-                ratingArray.push(<img key={`${star}-${i}`} src={star} alt="rating" className="info--rating--star" />)                    
-            } else {
-                ratingArray.push(<img key={`${starGrey}-${i}`} src={starGrey} alt="rating" className="info--rating--star" />)
-            }
-        }
-        return ratingArray;
+
+        const range = [1, 2, 3, 4, 5];
+
+        return(
+            range.map(rangeElem =>
+                rangeElem <= parseInt(logements[0].rating) ? 
+                <img key={`${star}-${rangeElem}`} src={star} alt="rating" className="info--rating--star" />
+                : <img key={`${starGrey}-${rangeElem}`} src={starGrey} alt="rating" className="info--rating--star" />
+            )
+        )
     }
 
     return(
@@ -32,6 +34,16 @@ function Info() {
             </div>
             <div className="info--rating">
                 {rating()}
+            </div>
+            <div className="info--dropdowns">
+                <Dropdown 
+                    title='Description' 
+                    content={logements[0].description} 
+                    select='desc' />
+                <Dropdown 
+                    title='Équipements' 
+                    content={logements[0].equipments.map(equip => (<p key={equip} className='equipment'>{equip}</p>))}
+                    select='equip' />
             </div>
         </section>
     )

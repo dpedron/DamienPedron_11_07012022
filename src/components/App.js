@@ -1,5 +1,5 @@
 import '../styles/css/App.css';
-import Banner from './Banner';
+import Header from './Header';
 import Slogan from './Slogan';
 import Gallery from './Gallery';
 import Footer from './Footer';
@@ -12,7 +12,7 @@ function App() {
     // HOMEPAGE //
 
 /*     <>
-      <Banner />
+      <Header />
       <main>
         <Slogan />
         <Gallery />
@@ -23,13 +23,13 @@ function App() {
     // HOUSING PAGE //
 
     <>
-    <Banner />
+    <Header />
     <main>
     <Carousel />
     <Info />
     </main>
     <Footer />
-  </>
+    </>
   );
 }
 

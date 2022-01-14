@@ -1,14 +1,11 @@
-import React from "react";
-import '../styles/css/Slogan.css';
+import '../styles/css/Banner.css';
 
-class Slogan extends React.Component {
-    render() {
-        return(
-            <section className="slogan">
-                <h1>Chez vous, partout et ailleurs</h1>
-            </section>
-        )
-    }
+function Banner() {
+    return(
+        <section className="banner">
+            <h1>Chez vous, partout et ailleurs</h1>
+        </section>
+    )
 }
 
-export default Slogan;
+export default Banner;

@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100%;
   height: 209px;
   background-color: black;
@@ -8,13 +8,19 @@ footer {
   flex-direction: column;
 }
 
-footer .footer--logo {
+.footer--logo {
   margin: 66px 0 20px 0;
   width: 122px;
 }
 
-footer p {
+.footer--copyright {
   font-size: 24px;
   font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .footer--copyright {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

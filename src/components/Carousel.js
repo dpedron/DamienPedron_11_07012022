@@ -20,17 +20,17 @@ function Carousel () {
 
         return (            
             <section className="carousel">
-                <img className="carousel--pic" src={logements[0].pictures[0]} />
-                <p className="carousel--pos">{logements[0].pictures.indexOf(logements[0].pictures[0]) + 1}/{logements[0].pictures.length}</p>                
-                {pictures.length > 1 ? (  
-                    <React.Fragment>                 
+                <img className="carousel--pic" src={logements[0].pictures[0]} />               
+                {pictures.length > 1 && (  
+                    <>          
+                        <p className="carousel--pos">{logements[0].pictures.indexOf(logements[0].pictures[0]) + 1}/{logements[0].pictures.length}</p>        
                         <button className="carousel--chevron carousel--chevron__prev" onClick={navigation}>
                             <img src={chevron} />
                         </button>
                         <button className="carousel--chevron carousel--chevron__next" onClick={navigation}>
                             <img src={chevron} />
                         </button>
-                    </React.Fragment>) : null
+                    </>)
                 }                    
             </section>
         )

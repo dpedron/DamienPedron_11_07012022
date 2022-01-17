@@ -1,7 +1,8 @@
 .carousel{
     display: flex;
     height: 415px;
-    margin: 10px 100px 20px 100px;
+    width: 87%;
+    margin: 10px auto 20px auto;
     overflow: hidden;
     border-radius: 25px;
     position: relative;
@@ -23,13 +24,33 @@
         height: 100%;
         background-color: transparent;
         border: none;
+        padding: 0 20px;
         &__prev{
             transform: rotate(180deg);
-            margin-left: 20px;
         }
         &__next{
             right: 0;
-            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel{
+        height: 255px;
+        border-radius: 10px;
+        margin: 25px auto 0 auto;
+        &--pos{
+            bottom: 0;
+            font-size: 12px;
+        }
+        &--chevron{
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            padding: 0 6px;
+            img{
+                height: 20px;
+            }
         }
     }
 }

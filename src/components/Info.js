@@ -39,11 +39,13 @@ function Info() {
                 <Dropdown 
                     title='Description' 
                     content={logements[0].description} 
-                    select='desc' />
+                    select='desc' 
+                />
                 <Dropdown 
                     title='Équipements' 
                     content={logements[0].equipments.map(equip => (<p key={equip} className='equipment'>{equip}</p>))}
-                    select='equip' />
+                    select='equip'
+                />
             </div>
         </section>
     )

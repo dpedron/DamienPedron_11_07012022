@@ -1,0 +1,66 @@
+/* Default dropdown style :
+To modify the style of a specific dropdown
+apply the modifications in the concerned component */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown--title {
+  z-index: 1;
+  width: 100%;
+  height: 52px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FF6060;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown--content {
+  background-color: #F6F6F6;
+  color: #FF6060;
+  margin-top: -10px;
+  padding: 20px 10px 10px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.dropdown--content {
+  display: block;
+}
+
+.close + .dropdown--content {
+  display: none;
+}
+
+.close img {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+  .dropdown {
+    margin-bottom: 20px;
+  }
+  .dropdown--title {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .dropdown--content {
+    font-size: 12px;
+    border-radius: 0 0 5px 5px;
+  }
+  .dropdown img {
+    height: 9px;
+  }
+}
+/*# sourceMappingURL=Dropdown.css.map */

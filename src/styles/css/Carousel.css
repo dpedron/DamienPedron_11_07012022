@@ -1,7 +1,8 @@
 .carousel {
   display: flex;
   height: 415px;
-  margin: 10px 100px 20px 100px;
+  width: 87%;
+  margin: 10px auto 20px auto;
   overflow: hidden;
   border-radius: 25px;
   position: relative;
@@ -27,15 +28,35 @@
   height: 100%;
   background-color: transparent;
   border: none;
+  padding: 0 20px;
 }
 
 .carousel--chevron__prev {
   transform: rotate(180deg);
-  margin-left: 20px;
 }
 
 .carousel--chevron__next {
   right: 0;
-  margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    height: 255px;
+    border-radius: 10px;
+    margin: 25px auto 0 auto;
+  }
+  .carousel--pos {
+    bottom: 0;
+    font-size: 12px;
+  }
+  .carousel--chevron {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    padding: 0 6px;
+  }
+  .carousel--chevron img {
+    height: 20px;
+  }
 }
 /*# sourceMappingURL=Carousel.css.map */

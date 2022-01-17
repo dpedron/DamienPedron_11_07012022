@@ -1,34 +1,18 @@
-import chevron from '../assets/chevron-drop.png'
+import chevron from '../assets/chevron-drop.png';
+import '../styles/css/Dropdown.css';
 
 function Dropdown(props){
     const title = props.title;
     const content = props.content;
     const select = props.select;
-
-    const hideShow = () => {
-        const dropContent = document.querySelector('.dropdown--content--' + select);
-        const chevron = document.querySelector('.chevron--' + select);
-        if(dropContent.classList.contains("close")){
-            dropContent.style.display = 'block';
-            dropContent.classList.remove("close");
-            chevron.style.transform = 'rotate(180deg)';
-        } else {
-            dropContent.style.display = 'none';
-            dropContent.classList.add("close");
-            chevron.style.transform = 'rotate(0deg)';
-        }
-    } 
-
-           
     
-
     return (
         <div className='dropdown'>
-            <button className="dropdown--title" onClick={hideShow}>
+            <button className="dropdown--title close" onClick={ (e) => e.currentTarget.classList.contains("close") ? e.currentTarget.classList.remove("close") : e.currentTarget.classList.add("close")}>
                 {title}
                 <img className={`chevron chevron--${select}`} src={chevron} alt=''/>
             </button>
-            <div className={`dropdown--content dropdown--content--${select} close`}>{content}</div>
+            <div className={`dropdown--content dropdown--content--${select} `}>{content}</div>
         </div>
     )
 }

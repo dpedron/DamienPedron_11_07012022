@@ -3,9 +3,9 @@ import "../styles/css/Header.css"
 
 function Header(){
     return (
-        <header>
-            <div className="header-content">
-                <img src={logo} alt="Kasa" className="header-content--logo" />
+        <header className="header">
+            <div className="header--content">
+                <img src={logo} alt="Kasa" className="header--logo" />
                 <nav>
                     <ul>
                         <li><a>Accueil</a></li>

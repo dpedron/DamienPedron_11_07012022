@@ -4,13 +4,26 @@
     align-items: center;
     border-radius: 25px;
     height: 223px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/slogan-bg.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), center / cover no-repeat url('../../assets/slogan-bg.png');
     max-width: 1240px;
     width: 87%;
-    margin: 63px 100px 0 100px;
-    h1{
+    margin: 63px auto 0 auto;
+    &--title{
         color: white;
         font-weight: 500;
         font-size: 48px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner{
+        height: 111px;
+        width: 89%;
+        margin: 16px auto 12px auto;
+        border-radius: 10px;
+        &--title{
+            font-size: 24px;
+            margin: 0 16px;
+        }
     }
 }

@@ -1,54 +1,28 @@
-import { lazy } from 'react';
 import '../styles/css/App.css';
+import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
-import Banner from './Banner';
-import Gallery from './Gallery';
 import Footer from './Footer';
-import Carousel from './Carousel';
-import Info from './Info';
+import Home from '../pages/Home';
+import Housing from '../pages/Housing';
+import About from '../pages/About';
 import Error from './Error';
-import About from './About';
+
+/**
+ * This is the router of the app
+ */
 
 function App() {
   return (
-
-    // HOMEPAGE //
-
-/*     <>
-      <Header />
-      <main>
-        <Banner />
-        <Gallery />
-      </main>
-      <Footer />
-    </> */
-
-    // HOUSING PAGE //
-
     <>
-    <Header />
-    <main>
-    <Carousel />
-    <Info />
-    </main>
-    <Footer />
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/housing/:id" element={<Housing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
     </>
-
-    // 404 PAGE //
-
-/*     <>
-    <Header />
-    <Error />
-    <Footer />
-    </> */
-
-    // ABOUT PAGE //
-
-/*     <>
-    <Header />
-    <About />
-    <Footer />
-    </> */
   );
 }
 

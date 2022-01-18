@@ -1,149 +1,149 @@
-.info{
-   margin: 0 auto;
-   width: 87%;
-   color: #FF6060;
-   display: grid;
-   justify-content: space-between;
-   grid-template-areas: 
-   "title host"
-   "location host"
-   "tags rating"
-   "dropdowns dropdowns";
-    &--title{
-        grid-area: title;
-        font-weight: 500;
-        font-size: 36px;
-        margin: 0;
-        padding-top: 10px;
-        line-height: 30px;
+.info {
+  margin: 0 auto;
+  width: 87%;
+  color: #ff6060;
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas:
+    'title host'
+    'location host'
+    'tags rating'
+    'dropdowns dropdowns';
+  &--title {
+    grid-area: title;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+    padding-top: 10px;
+    line-height: 30px;
+  }
+  &--host {
+    grid-area: host;
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    &--name {
+      max-width: 100px;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 10px 0 0;
     }
-    &--host{
-        grid-area: host;
-        display: flex;
-        height: 64px;
-        align-items: center;
-        justify-content: right;
-        text-align: right;
-        &--name{
-            max-width: 100px;
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0 10px 0 0;
+    &--pic {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+    }
+  }
+  &--location {
+    grid-area: location;
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &--tags {
+    grid-area: tags;
+    display: flex;
+    margin: 0;
+    &--tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin: 0 10px 0 0;
+      padding: 0 20px;
+      font-size: 14px;
+      font-weight: 500;
+      height: 25px;
+      background-color: #ff6060;
+      color: white;
+    }
+  }
+  &--rating {
+    grid-area: rating;
+    text-align: right;
+    &--star {
+      margin: 0 5px;
+    }
+  }
+  &--dropdowns {
+    display: flex;
+    justify-content: space-between;
+    grid-area: dropdowns;
+    margin: 20px -20px 20px 0;
+    .dropdown {
+      flex-basis: 582px;
+      margin-right: 20px;
+      &--content {
+        padding: 40px 10px 20px 20px;
+        .equipment {
+          margin: 0 0 5px 0;
         }
-        &--pic{
-            height: 64px;
-            width: 64px;
-            border-radius: 50%;
-        }
+      }
     }
-    &--location{
-        grid-area: location;
-        margin: 10px 0 20px 0;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    &--tags{        
-        grid-area: tags;
-        display: flex;
-        margin: 0;
-        &--tag{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            margin: 0 10px 0 0;
-            font-size: 14px;
-            font-weight: 500;
-            width: 115px;
-            height: 25px;
-            background-color: #FF6060;
-            color: white;
-        }
-    }
-    &--rating{
-        grid-area: rating;
-        text-align: right;
-        &--star{
-            margin: 0 5px;
-        }
-    }
-    &--dropdowns{
-        display: flex;
-        justify-content: space-between;
-        grid-area: dropdowns;
-        margin: 20px -20px 20px 0;
-        .dropdown{
-            flex-basis: 582px;
-            margin-right: 20px;
-            &--content{
-                padding: 40px 10px 20px 20px;
-                .equipment{
-                    margin: 0 0 5px 0;
-                }
-            }
-        }
-    }
+  }
 }
 
-
 @media (max-width: 992px) {
-    .info{
-        width: 89%;
-        grid-template-areas: 
-        "title title"
-        "location location"
-        "tags tags"
-        "rating host"
-        "dropdowns dropdowns";
-        &--title{
-            font-size: 18px;
-            line-height: 26px;
-        }        
-        &--location{
-            margin: 5px 0 15px 0;
-            font-size: 14px;
-        }
-        &--tags{
-            &--tag{
-                border-radius: 5px;
-                font-size: 10px;
-                width: 84px;
-                height: 18px;
-            }
-        }
-        &--rating{
-            grid-area: rating;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            &--star{
-                height: 15px;
-                margin: 0 5px 0 0;
-            }
-        }
-        &--host{
-            height: 32px;
-            &--name{
-                max-width: 70px;
-                font-size: 12px;
-            }
-            &--pic{
-                height: 32px;
-                width: 32px;
-            }
-        }
-        &--dropdowns{
-            flex-direction: column;
-            margin: 15px 0 0 0;
-            .dropdown{
-                flex-basis: 30px;
-                &--content{
-                    padding: 20px 10px 10px 20px;
-                    .equipment{
-                        margin: 0 0 2px 0;
-                    }
-                }
-            }
-        }
+  .info {
+    width: 89%;
+    grid-template-areas:
+      'title title'
+      'location location'
+      'tags tags'
+      'rating host'
+      'dropdowns dropdowns';
+    &--title {
+      font-size: 18px;
+      line-height: 26px;
     }
+    &--location {
+      margin: 5px 0 15px 0;
+      font-size: 14px;
+    }
+    &--tags {
+      &--tag {
+        border-radius: 5px;
+        font-size: 10px;
+        height: 18px;
+        padding: 0 10px;
+      }
+    }
+    &--rating {
+      grid-area: rating;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      &--star {
+        height: 15px;
+        margin: 0 5px 0 0;
+      }
+    }
+    &--host {
+      height: 32px;
+      &--name {
+        max-width: 70px;
+        font-size: 12px;
+      }
+      &--pic {
+        height: 32px;
+        width: 32px;
+      }
+    }
+    &--dropdowns {
+      flex-direction: column;
+      margin: 15px 0 0 0;
+      .dropdown {
+        flex-basis: 30px;
+        margin: 0 0 20px 0;
+        &--content {
+          padding: 20px 10px 10px 20px;
+          .equipment {
+            margin: 0 0 2px 0;
+          }
+        }
+      }
+    }
+  }
 }

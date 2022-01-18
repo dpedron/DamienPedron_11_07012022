@@ -1,10 +1,10 @@
 .info {
   margin: 0 auto;
   width: 87%;
-  color: #FF6060;
+  color: #ff6060;
   display: grid;
   justify-content: space-between;
-  grid-template-areas: "title host" "location host" "tags rating" "dropdowns dropdowns";
+  grid-template-areas: 'title host' 'location host' 'tags rating' 'dropdowns dropdowns';
 }
 
 .info--title {
@@ -57,11 +57,11 @@
   align-items: center;
   border-radius: 10px;
   margin: 0 10px 0 0;
+  padding: 0 20px;
   font-size: 14px;
   font-weight: 500;
-  width: 115px;
   height: 25px;
-  background-color: #FF6060;
+  background-color: #ff6060;
   color: white;
 }
 
@@ -97,7 +97,7 @@
 @media (max-width: 992px) {
   .info {
     width: 89%;
-    grid-template-areas: "title title" "location location" "tags tags" "rating host" "dropdowns dropdowns";
+    grid-template-areas: 'title title' 'location location' 'tags tags' 'rating host' 'dropdowns dropdowns';
   }
   .info--title {
     font-size: 18px;
@@ -110,8 +110,8 @@
   .info--tags--tag {
     border-radius: 5px;
     font-size: 10px;
-    width: 84px;
     height: 18px;
+    padding: 0 10px;
   }
   .info--rating {
     grid-area: rating;
@@ -140,6 +140,7 @@
   }
   .info--dropdowns .dropdown {
     flex-basis: 30px;
+    margin: 0 0 20px 0;
   }
   .info--dropdowns .dropdown--content {
     padding: 20px 10px 10px 20px;

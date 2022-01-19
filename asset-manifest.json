@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DamienPedron_11_07012022/static/css/main.00bcbd29.css",
-    "main.js": "/DamienPedron_11_07012022/static/js/main.ce321f4d.js",
-    "static/media/about.png": "/DamienPedron_11_07012022/static/media/about.f44802cc49aa66b395a9.png",
-    "static/media/slogan-bg.png": "/DamienPedron_11_07012022/static/media/slogan-bg.50afe9185f68054dc2f0.png",
-    "static/media/logo-footer.svg": "/DamienPedron_11_07012022/static/media/logo-footer.9f917859754761599413c544ed5da04d.svg",
-    "index.html": "/DamienPedron_11_07012022/index.html",
-    "main.00bcbd29.css.map": "/DamienPedron_11_07012022/static/css/main.00bcbd29.css.map",
-    "main.ce321f4d.js.map": "/DamienPedron_11_07012022/static/js/main.ce321f4d.js.map"
+    "main.css": "/static/css/main.023b43fd.css",
+    "main.js": "/static/js/main.7b3c974c.js",
+    "static/media/about.png": "/static/media/about.f44802cc49aa66b395a9.png",
+    "static/media/slogan-bg.png": "/static/media/slogan-bg.50afe9185f68054dc2f0.png",
+    "static/media/logo-footer.svg": "/static/media/logo-footer.9f917859754761599413c544ed5da04d.svg",
+    "index.html": "/index.html",
+    "main.023b43fd.css.map": "/static/css/main.023b43fd.css.map",
+    "main.7b3c974c.js.map": "/static/js/main.7b3c974c.js.map"
   },
   "entrypoints": [
-    "static/css/main.00bcbd29.css",
-    "static/js/main.ce321f4d.js"
+    "static/css/main.023b43fd.css",
+    "static/js/main.7b3c974c.js"
   ]
 }

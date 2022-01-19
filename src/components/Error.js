@@ -9,7 +9,11 @@ function Error() {
       <h2 className="error--message">
         Oups! La page que vous demandez n'existe pas.
       </h2>
-      <Link to="/" className="error--go-home">
+      <Link
+        to="/"
+        className="error--go-home"
+        onClick={() => (document.documentElement.scrollTop = 0)}
+      >
         Retourner sur la page d’accueil
       </Link>
     </main>

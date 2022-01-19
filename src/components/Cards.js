@@ -14,6 +14,7 @@ function Cards() {
         style={{
           background: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), center / cover no-repeat url(${background})`,
         }}
+        onClick={() => (document.documentElement.scrollTop = 0)}
       >
         <p className="card--title">{logement.title}</p>
       </Link>

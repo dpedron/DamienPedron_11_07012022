@@ -10,10 +10,20 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <Link
+                to="/"
+                onClick={() => (document.documentElement.scrollTop = 0)}
+              >
+                Accueil
+              </Link>
             </li>
             <li>
-              <Link to="/about">A propos</Link>
+              <Link
+                to="/about"
+                onClick={() => (document.documentElement.scrollTop = 0)}
+              >
+                A propos
+              </Link>
             </li>
           </ul>
         </nav>

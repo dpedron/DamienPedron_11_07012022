@@ -1,6 +1,10 @@
 import Dropdown from './Dropdown';
 import '../styles/css/About.css';
 
+/**
+ * This is the component for the about page
+ */
+
 function AboutComponent() {
   return (
     <main className="about">

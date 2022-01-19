@@ -2,6 +2,10 @@ import React from 'react';
 import '../styles/css/Error.css';
 import { Link } from 'react-router-dom';
 
+/**
+ * This is the error component used to display error informations on NotFound page
+ */
+
 function Error() {
   return (
     <main className="error">

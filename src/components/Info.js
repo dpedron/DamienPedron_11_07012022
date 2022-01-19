@@ -4,29 +4,38 @@ import star from '../assets/star.png';
 import starGrey from '../assets/star-grey.png';
 import Dropdown from './Dropdown';
 
+/**
+ * This is the information section of the housing page
+ * All informations came from json mocked data
+ */
+
 function Info(props) {
-  const id = props.id;
-  const housing = logements.find((logement) => logement.id === id);
+  const id = props.id; // Id of the current housing
+  const housing = logements.find((logement) => logement.id === id); // Get all informations of the current housing
 
   const rating = () => {
-    const range = [1, 2, 3, 4, 5];
+    const range = [1, 2, 3, 4, 5]; // Range notation
 
-    return range.map((rangeElem) =>
-      rangeElem <= parseInt(housing.rating) ? (
-        <img
-          key={`${star}-${rangeElem}`}
-          src={star}
-          alt="rating"
-          className="info--rating--star"
-        />
-      ) : (
-        <img
-          key={`${starGrey}-${rangeElem}`}
-          src={starGrey}
-          alt="rating"
-          className="info--rating--star"
-        />
-      )
+    return range.map(
+      (
+        rangeElem // Repeat 5 times
+      ) =>
+        rangeElem <= parseInt(housing.rating) ? ( // The housing rating is higher than the range => add star
+          <img
+            key={`${star}-${rangeElem}`}
+            src={star}
+            alt="rating"
+            className="info--rating--star"
+          />
+        ) : (
+          // The housing rating is lower than the range => add an empty star (in grey)
+          <img
+            key={`${starGrey}-${rangeElem}`}
+            src={starGrey}
+            alt="rating"
+            className="info--rating--star"
+          />
+        )
     );
   };
 

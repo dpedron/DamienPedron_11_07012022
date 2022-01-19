@@ -1,6 +1,10 @@
 import logo from '../assets/logo-footer.svg';
 import '../styles/css/Footer.css';
 
+/**
+ * This is the footer used in every pages
+ */
+
 function Footer() {
   return (
     <footer className="footer">

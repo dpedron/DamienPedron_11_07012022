@@ -2,6 +2,11 @@ import logements from '../datas/logements.json';
 import '../styles/css/Cards.css';
 import { Link } from 'react-router-dom';
 
+/**
+ * This is the cards for the homepage
+ * Informations to create them came from json mocked data
+ */
+
 function Cards() {
   return logements.map((logement) => {
     const background = logement.pictures[0];

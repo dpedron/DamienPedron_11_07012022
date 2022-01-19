@@ -1,5 +1,9 @@
 import '../styles/css/Banner.css';
 
+/**
+ * This is the banner of the homepage
+ */
+
 function Banner() {
   return (
     <section className="banner">

@@ -2,6 +2,10 @@ import logo from '../assets/logo.png';
 import '../styles/css/Header.css';
 import { Link } from 'react-router-dom';
 
+/**
+ * This is the header used in every pages
+ */
+
 function Header() {
   return (
     <header className="header">

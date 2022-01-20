@@ -12,7 +12,7 @@ function Cards() {
     const background = logement.pictures[0];
     return (
       <Link
-        to={`/housing/${logement.id}`}
+        to={`/housing-${logement.id}`}
         href="./#"
         key={logement.id}
         className="card"

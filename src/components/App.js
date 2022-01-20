@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
+      <Routes basename="/DamienPedron_11_07012022">
         <Route exact path="/" element={<Home />} />
-        <Route path="/housing/:id" element={<Housing />} />
+        <Route path="/housing-:id" element={<Housing />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>

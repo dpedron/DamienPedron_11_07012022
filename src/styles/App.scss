@@ -2,9 +2,12 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 main {
   max-width: 1440px;
   margin: auto;
+  padding-bottom: 209px;
 }

@@ -19,7 +19,6 @@ function AboutComponent() {
               informations sont régulièrement vérifiées par nos équipes.
             </p>
           }
-          select="fiab"
         />
         <Dropdown
           title="Respect"
@@ -30,7 +29,6 @@ function AboutComponent() {
               entraînera une exclusion de notre plateforme.
             </p>
           }
-          select="resp"
         />
         <Dropdown
           title="Service"
@@ -41,7 +39,6 @@ function AboutComponent() {
               la moindre question.
             </p>
           }
-          select="serv"
         />
         <Dropdown
           title="Sécurité"
@@ -55,7 +52,6 @@ function AboutComponent() {
               des ateliers sur la sécurité domestique pour nos hôtes.
             </p>
           }
-          select="secu"
         />
       </div>
     </main>

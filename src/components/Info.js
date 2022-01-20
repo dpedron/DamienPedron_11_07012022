@@ -24,7 +24,7 @@ function Info(props) {
           <img
             key={`${star}-${rangeElem}`}
             src={star}
-            alt="rating"
+            alt=""
             className="info--rating--star"
           />
         ) : (
@@ -32,7 +32,7 @@ function Info(props) {
           <img
             key={`${starGrey}-${rangeElem}`}
             src={starGrey}
-            alt="rating"
+            alt=""
             className="info--rating--star"
           />
         )
@@ -58,13 +58,11 @@ function Info(props) {
           </p>
         ))}
       </div>
-      <div className="info--rating">{rating()}</div>
+      <div className="info--rating" title="rating">
+        {rating()}
+      </div>
       <div className="info--dropdowns">
-        <Dropdown
-          title="Description"
-          content={logements[0].description}
-          select="desc"
-        />
+        <Dropdown title="Description" content={logements[0].description} />
         <Dropdown
           title="Équipements"
           content={logements[0].equipments.map((equip) => (
@@ -72,7 +70,6 @@ function Info(props) {
               {equip}
             </p>
           ))}
-          select="equip"
         />
       </div>
     </section>

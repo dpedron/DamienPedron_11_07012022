@@ -14,7 +14,7 @@ function Error() {
         Oups! La page que vous demandez n'existe pas.
       </h2>
       <Link
-        to="/"
+        to="/DamienPedron_11_07012022/"
         className="error--go-home"
         onClick={() => (document.documentElement.scrollTop = 0)}
       >

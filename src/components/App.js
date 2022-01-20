@@ -16,9 +16,12 @@ function App() {
     <>
       <Header />
       <Routes basename="/DamienPedron_11_07012022">
-        <Route exact path="/" element={<Home />} />
-        <Route path="/housing-:id" element={<Housing />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/DamienPedron_11_07012022/" element={<Home />} />
+        <Route
+          path="/DamienPedron_11_07012022/housing-:id"
+          element={<Housing />}
+        />
+        <Route path="/DamienPedron_11_07012022/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

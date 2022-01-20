@@ -15,7 +15,7 @@ function Header() {
           <ul>
             <li>
               <Link
-                to="/"
+                to="/DamienPedron_11_07012022/"
                 onClick={() => (document.documentElement.scrollTop = 0)}
               >
                 Accueil
@@ -23,7 +23,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/DamienPedron_11_07012022/about"
                 onClick={() => (document.documentElement.scrollTop = 0)}
               >
                 A propos

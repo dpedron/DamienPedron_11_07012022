@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DamienPedron_11_07012022/static/css/main.081676d0.css",
-    "main.js": "/DamienPedron_11_07012022/static/js/main.13d8e1f3.js",
+    "main.css": "/DamienPedron_11_07012022/static/css/main.bb412257.css",
+    "main.js": "/DamienPedron_11_07012022/static/js/main.5f8b5cdf.js",
     "static/media/about.png": "/DamienPedron_11_07012022/static/media/about.f44802cc49aa66b395a9.png",
     "static/media/slogan-bg.png": "/DamienPedron_11_07012022/static/media/slogan-bg.50afe9185f68054dc2f0.png",
     "static/media/logo-footer.svg": "/DamienPedron_11_07012022/static/media/logo-footer.9f917859754761599413c544ed5da04d.svg",
     "index.html": "/DamienPedron_11_07012022/index.html",
-    "main.081676d0.css.map": "/DamienPedron_11_07012022/static/css/main.081676d0.css.map",
-    "main.13d8e1f3.js.map": "/DamienPedron_11_07012022/static/js/main.13d8e1f3.js.map"
+    "main.bb412257.css.map": "/DamienPedron_11_07012022/static/css/main.bb412257.css.map",
+    "main.5f8b5cdf.js.map": "/DamienPedron_11_07012022/static/js/main.5f8b5cdf.js.map"
   },
   "entrypoints": [
-    "static/css/main.081676d0.css",
-    "static/js/main.13d8e1f3.js"
+    "static/css/main.bb412257.css",
+    "static/js/main.5f8b5cdf.js"
   ]
 }
